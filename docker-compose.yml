@@ -13,8 +13,6 @@ services:
       - ./public_html/:/var/www/html/
     depends_on:
       - php-fpm
-    environment:
-      NGINX_HOST: ${NGINX_HOST}
   php-fpm: 
     build: ./config/php/
     networks:
